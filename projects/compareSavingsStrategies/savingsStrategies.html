@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Compare Savings Strategies</title>
+
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="row head">
+      <div class="col-12"><h1>Compare Savings Strategies</div>
+    </div>
+    <form id="savingsForm">
+      <div class="row">
+        <div class="col-04">
+          <input type="text" id="savings1" name="savings1" value="5000">
+        </div>
+        <div class="col-04">Annual Savings</div>
+        <div class="col-04">
+          <input type="text" id="savings2" name="savings2" value="5000">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-04">
+          <input type="text" id="interest1" name="interest1" value="0.1">
+        </div>
+        <div class="col-04">Interest Rate</div>
+        <div class="col-04">
+          <input type="text" id="interest2" name="interest2" value="0.1">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-04">
+          <input type="text" id="years1" name="years1" value="45">
+        </div>
+        <div class="col-04">Years Saved</div>
+        <div class="col-04">
+          <input type="text" id="years2" name="years2" value="45">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-04">
+          <input type="text" id="start1" name="start1" value="1">
+        </div>
+        <div class="col-04">Start Year</div>
+        <div class="col-04">
+          <input type="text" id="start2" name="start2" value="11">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-04">
+          <td><input type="text" id="stop1" name="stop1" value="10">
+        </div>
+        <div class="col-04">Stop Year</div>
+        <div class="col-04">
+          <input type="text" id="stop2" name="stop2" value="45"></td>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-04">
+          <button type="button" value="clear" id="clear" onclick="Clear()">Clear</button>
+        </div>
+        <div class="col-04">
+          <button type="button" value="defaults" id="defaults" onclick="Defaults()">Defaults</button>
+        </div>
+        <div class="col-04">
+          <button type="button" id="doit" onclick="doIt()">Do it</button>
+        </div>
+      </div>
+    </form>
+    <div id="row hints"></div>
+    <!--Summary-->
+    <div id="summary">
+      <table id="sum1">
+        <tr>
+          <td><h4>Summary Strategy 1</h4></td>
+        </tr>
+      </table>
+
+      <table id="sum2">
+        <tr>
+          <td><h4>Summary Strategy 2</h4></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="divider"></div>
+    <!--Data-->
+    <div class="row white">
+      <div class="titles">Savings</div>
+      <div class="titles">Interest</div>
+      <div class="titles">Balance</div>
+      <div class="years">YR</div>
+      <div class="titles">Savings</div>
+      <div class="titles">Interest</div>
+      <div class="titles">Balance</div>
+    </div>
+    <div class="data">
+      <table id="strat1"></table>
+      <table id="year"></table>
+      <table id="strat2"></table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js\sticky\jquery.sticky.js"></script>
+    <script src="js\sticky.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>

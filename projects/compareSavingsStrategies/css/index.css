@@ -1,0 +1,120 @@
+* {
+  box-sizing: 		border-box;
+}
+
+.col-00  {display:       initial; }
+.col-01  {width: 		  8.33%; }
+.col-02  {width: 		 16.66%; }
+.col-03  {width: 		 25.00%; }
+.col-04  {width: 		 33.33%; }
+.col-05  {width: 		 41.66%; }
+.col-06  {width: 		 50.00%; }
+.col-07  {width: 		 58.33%; }
+.col-08  {width: 		 66.66%; }
+.col-09  {width: 		 75.00%; }
+.col-10 	{width: 		 83.33%; }
+.col-11 	{width: 		 91.66%; }
+.col-12 	{width: 		100.00%; }
+
+[class*="col-"] {
+  float: 				left;
+  border-radius: 		10px;
+}
+.row::after {
+  content: 			"";
+  clear: 				both;
+  display: 			block;
+}
+
+.white {
+  background-color: white;
+  border-bottom: 4px solid black;
+}
+
+.titles {
+  color: black;
+  background-color: white;
+  float: 				left;
+  border-radius: 		10px;
+  width: 15.66%
+
+}
+
+.years {
+  color: white;
+  background-color: black;
+  float: 				left;
+  border-radius: 0px;
+  width: 6%;
+}
+
+body {
+  text-align: center;
+  background-color: #F5F5F5;
+}
+
+input {
+  width: 50%;
+}
+
+#strat1, #strat2 {
+  float: left;
+  width: 47%;
+  border-radius: 0px;
+  color: black;
+  background-color: white;
+}
+
+#year {
+  float: left;
+  width: 6%;
+  border-radius: 0px;
+  color: white;
+  background-color: black;
+}
+
+#strat1 td, #strat2 td {
+  width: 15.66%;
+}
+
+#summary table {
+  float: left;
+  width: 50%;
+  border-radius: 		10px;
+}
+
+.divider {
+  content: 			"";
+  clear: 				both;
+  display: 			block;
+}
+
+@media  (max-width: 419px) {
+  #summary {
+    font-size: .8em;
+  }
+
+  .data table td, .titles, .years {
+    font-size: .555em;
+  }
+}
+
+@media  (min-width: 419px) and (max-width: 496px) {
+  #summary {
+    font-size: .9em;
+  }
+
+  .data table td, .titles, .years {
+    font-size: .75em;
+  }
+}
+
+@media  (min-width: 681px) {
+  #summary {
+    font-size: 1.2em;
+  }
+
+  .data table td, .titles, .years {
+    font-size: 1.5em;
+  }
+}
